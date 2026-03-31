@@ -1,0 +1,39 @@
+import { useRef, useContext } from "react";
+import { MdAddReaction } from "react-icons/md";
+import { todoitemcontext } from "../store/todo-item-store";
+function Addtodo() {
+  const todoname = useRef("");
+  const tododate = useRef("");
+  const { addTodoItem } = useContext(todoitemcontext);
+
+  const handelonadd = () => {
+    event.preventDefault();
+    let addname = todoname.current.value;
+    let adddate = tododate.current.value;
+    addTodoItem(addname, adddate);
+
+    todoname.current.value = "";
+    tododate.current.value = "";
+  };
+  return (
+    <>
+      <form onSubmit={() => handelonadd()} className="container ">
+        <div className="row kgRow">
+          <div className="col-5">
+            <input type="text" ref={todoname} />
+          </div>
+          <div className="col-5">
+            <input type="date" ref={tododate} />
+          </div>
+          <div className="col-2">
+            <button className="btn btn-success kgButton">
+              <MdAddReaction />
+            </button>
+          </div>
+        </div>
+      </form>
+    </>
+  );
+}
+
+export default Addtodo;
