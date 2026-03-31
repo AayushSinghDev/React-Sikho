@@ -1,0 +1,12 @@
+input.display {
+  font-size: 22px;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: red;
+  height: 50px;
+  font-weight: 700;
+  width: 100%;
+  text-transform: uppercase;
+}

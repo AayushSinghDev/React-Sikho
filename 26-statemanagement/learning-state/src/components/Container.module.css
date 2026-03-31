@@ -1,0 +1,8 @@
+.comtainer {
+  width: 50%;
+  min-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px dotted red;
+  margin: 10px;
+}

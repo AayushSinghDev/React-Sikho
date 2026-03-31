@@ -1,0 +1,12 @@
+.kg-item {
+  --bs-list-group-bg: pink;
+  font-size: 25px;
+  font-weight: 500;
+}
+.kg-span {
+  font-weight: 700;
+  color: orangered;
+}
+.button {
+  float: right;
+}

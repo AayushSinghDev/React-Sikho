@@ -1,0 +1,7 @@
+.contain {
+  width: 300px;
+  background: seashell;
+  padding: 20px;
+  border: 2px solid silver;
+  border-radius: 5px;
+}

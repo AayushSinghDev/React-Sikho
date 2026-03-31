@@ -1,0 +1,7 @@
+.kg-item {
+  --bs-list-group-bg: pink;
+}
+.kg-span {
+  font-weight: 700;
+  color: orangered;
+}
